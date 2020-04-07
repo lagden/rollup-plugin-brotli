@@ -1,0 +1,40 @@
+{
+  "name": "@tadashi/rollup-plugin-brotli",
+  "version": "1.0.0",
+  "description": "Compress your Rollup bundle with Brotli",
+  "keywords": [
+    "rollup",
+    "plugin",
+    "brotli",
+    "compress"
+  ],
+  "main": "./lib/index.cjs.js",
+  "jsnext:main": "./lib/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "rm -rf test/__output && npm run build",
+    "test": "mocha",
+    "posttest": "rm -rf test/__output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:lagden/rollup-plugin-brotli.git"
+  },
+  "author": "Michael Strobel <michael@kryops.de>",
+  "contributors": [
+    "Thiago Lagden <lagden@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lagden/rollup-plugin-brotli/issues"
+  },
+  "homepage": "https://github.com/lagden/rollup-plugin-brotli#readme",
+  "engines": {
+    "node": ">=10.19.0"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "7.1.1",
+    "rollup": "2.3.3"
+  }
+}
