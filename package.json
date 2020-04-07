@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/rollup-plugin-brotli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Compress your Rollup bundle with Brotli",
   "keywords": [
     "rollup",
@@ -14,8 +14,13 @@
     "build": "rollup -c",
     "pretest": "rm -rf test/__output && npm run build",
     "test": "mocha",
-    "posttest": "rm -rf test/__output"
+    "posttest": "rm -rf test/__output",
+    "prepublish": "npm test"
   },
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:lagden/rollup-plugin-brotli.git"
