@@ -40,16 +40,18 @@ brotli({
 })
 ```
 
-**options**: Brotli compression options
+**options**: Brotli compression options  
 The options available are the [Class: BrotliOptions](https://nodejs.org/docs/latest-v10.x/api/zlib.html#zlib_class_brotlioptions).
 
-**additional**: Compress additional files
+**additional**: Compress additional files  
 This option allows you to compress additional files that were created by other Rollup plugins.
 
-As the `onwrite` callback for all plugins is executed in the same order they are listed in the `plugins` array, this might only work if the brotli plugin is positioned after all other plugins that create additional files.
+As the `onwrite` callback for all plugins is executed in the same order they are listed in the `plugins` array, this might only work if the brotli plugin is positioned after all other plugins that create additional files.  
 **minSize**: Minimum size for compression
 
-Specified the minimum size in Bytes for a file to get compressed. Files that are smaller than this threshold will not be compressed. This applies to both the generated bundle and specified additional files.
+Specified the minimum size in Bytes for a file to get compressed.  
+Files that are smaller than this threshold will not be compressed.  
+This applies to both the generated bundle and specified additional files.
 
 
 ## License

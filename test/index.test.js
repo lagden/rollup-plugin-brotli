@@ -3,7 +3,7 @@
 const {writeFile, readFile, access, mkdirSync} = require('fs')
 const {brotliDecompressSync: decompress} = require('zlib')
 const {promisify} = require('util')
-const {describe, it, beforeEach, afterEach} = require('mocha')
+const {describe, it} = require('mocha')
 const {expect} = require('chai')
 const {rollup} = require('rollup')
 const brotli = require('../lib/index.cjs')
